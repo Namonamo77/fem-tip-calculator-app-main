@@ -13,6 +13,21 @@
     />
 
     <link rel="stylesheet" href="./css/styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Tip calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,8 +42,58 @@
     </style>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <header>
+      <h1 class="title">
+        <span>spli</span>
+        <span>tter</span>
+      </h1>
+    </header>
+
+    <main class="container">
+      <div class="col-left">
+        <div class="bill">
+          <label>Bill</label>
+          <h3 class="icon-bill">$</h3>
+          <input class="bill-input" type="number" placeholder="€" value="0" />
+        </div>
+        <div class="tip">
+          <label>Select Tip %</label>
+          <div class="tip-values">
+            <button class="tip-cta">5%</button>
+            <button class="tip-cta">10%</button>
+            <button class="tip-cta">15%</button>
+            <button class="tip-cta">25%</button>
+            <button class="tip-cta">50%</button>
+            <input class="tip-input" type="number" placeholder="Custom" />
+          </div>
+        </div>
+        <div class="people">
+          <label>Number of People</label>
+          <i class="fa fa-user icon-people"></i>
+          <input class="people-input" type="number" value="0" />
+        </div>
+      </div>
+
+      <div class="col-right">
+        <div class="total-card">
+          <div class="tip-amount">
+            <h3>
+              Tip amount
+              <span>/ person</span>
+            </h3>
+            <h2 class="amount-value">$0</h2>
+          </div>
+          <div class="tip-total">
+            <h3>
+              Total
+              <span>/ person</span>
+            </h3>
+            <h2 class="total-value">$0</h2>
+          </div>
+          <button class="reset-cta">Reset</button>
+        </div>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
