@@ -137,6 +137,18 @@ label {
     color: var(--dark-green);
     outline: none;
 }
+.people-input::-webkit-outer-spin-button,
+.people-input::-webkit-inner-spin-button,
+.tip-input::-webkit-outer-spin-button,
+.tip-input::-webkit-inner-spin-button,
+.bill-input::-webkit-outer-spin-button,
+.bill-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+}
 
 .total-card {
     background: var(--dark-green);
@@ -179,6 +191,10 @@ label {
 .reset-cta:hover {
     background: var(--ntrl-dark);
     color: var(--white);
+}
+
+.amount-value, .total-value {
+    color: var(--accent-green);
 }
 
 @media (min-width: 800px){
