@@ -15,7 +15,6 @@ let customerShareAmount = 0
 
 function calculateTipPerClient(){
     customerShareAmount = billInput.value / customerNumber.value
-    console.log(customerShareAmount)
     
 }
 
@@ -34,7 +33,6 @@ const tipValue = (e) =>{
             tipBtn.classList.add("active")
         }
     })
-    console.log(amountValue)
 
     calculateTipPerClient()
 
