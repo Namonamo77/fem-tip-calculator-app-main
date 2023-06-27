@@ -6,6 +6,7 @@
     --dark-green: hsl(183, 100%, 15%);
     --accent-green: hsl(172, 67%, 45%);
     --white: rgb(254, 254, 254);
+    --err: rgb(146, 30, 24);
 }   
 
 *,
@@ -68,8 +69,11 @@ label {
     font-family: 'Space Mono', monospace;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--dark-green);
-    outline: none;
+    color: var(--ntrl-dark) ;
+}
+.bill-input:focus, .people-input:focus {
+    color: var(--dark-green) ;
+    outline: 1px solid var(--accent-green);
 }
 
 /* tip % */
@@ -93,7 +97,7 @@ label {
     cursor: pointer;
 }
 
-.tip-cta:hover{
+.tip-cta:hover, .active{
     background: var(--accent-green);
 }
 
@@ -125,6 +129,7 @@ label {
     opacity: .5;
 }
 .people-input {
+    position: relative;
     padding: .2em ;
     text-align: right;
     margin: .5em 0 1em;
@@ -134,7 +139,7 @@ label {
     font-family: 'Space Mono', monospace;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--dark-green);
+    color: var(--ntrl-dark);
     outline: none;
 }
 .people-input::-webkit-outer-spin-button,
@@ -195,6 +200,26 @@ input[type=number]{
 
 .amount-value, .total-value {
     color: var(--accent-green);
+}
+.custom-cta {
+    color: var(--ntrl-dark);
+}
+.custom-cta:hover{
+    background: var(--bg);
+}
+.custom-cta:focus {
+    color: var(--dark-green);
+    outline: 1px solid var(--accent-green );
+}
+
+.error {
+    outline: 1px solid var(--err);
+}
+.err-people {
+    position: absolute;
+    right: 0;
+    color: var(--err);
+    display: none;
 }
 
 @media (min-width: 800px){
